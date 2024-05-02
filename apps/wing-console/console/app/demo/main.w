@@ -10,6 +10,10 @@ let queue = new cloud.Queue();
 let api = new cloud.Api();
 let counter = new cloud.Counter(initial: 0);
 
+let secret = new cloud.Secret(
+  name: "my-secret", // optional, defaults to a generated name
+);
+
 class myBucket {
   b: cloud.Bucket;
   new() {

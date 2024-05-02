@@ -165,6 +165,14 @@ export const ResourceMetadata = memo(
 
             break;
           }
+          case "@winglang/sdk.cloud.Secret": {
+            resourceGroup = {
+              groupName: "Secret",
+              icon,
+            };
+
+            break;
+          }
         }
       }
 

@@ -23,6 +23,7 @@ export type {
   IApiClient,
   IEndpointClient,
   OpenApiSpec,
+  ISecretClient,
 } from "@winglang/sdk/lib/cloud/index.js";
 
 export type { ITestRunnerClient } from "@winglang/sdk/lib/std/index.js";

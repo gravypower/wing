@@ -8,11 +8,11 @@ import { FunctionInteractionView } from "./function-interaction-view.js";
 import { QueueInteractionView } from "./queue-interaction-view.js";
 import { RedisInteractionView } from "./redis-interaction-view.js";
 import { ScheduleInteractionView } from "./schedule-interaction-view.js";
+import { SecretInteractionView } from "./secret-interaction-view.js";
 import { TableInteractionView } from "./table-interaction-view.js";
 import { TopicInteractionView } from "./topic-interaction-view.js";
 import { UnsupportedInteractionView } from "./unsupported-interaction-view.js";
 import { WebsiteInteractionView } from "./website-interaction-view.js";
-import { SecretInteractionView } from "./secret-interaction-view.js";
 
 export interface ResourceViewProps {
   resourceType: string;
@@ -59,7 +59,7 @@ export const ResourceInteractionView = memo(
         case "@winglang/sdk.cloud.Secret": {
           return <SecretInteractionView resourcePath={resourcePath} />;
         }
-        
+
         default: {
           return <UnsupportedInteractionView resourceType={resourceType} />;
         }

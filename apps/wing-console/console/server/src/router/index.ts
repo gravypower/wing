@@ -11,6 +11,7 @@ import { createFunctionRouter } from "./function.js";
 import { createHttpClientRouter } from "./http-client.js";
 import { createQueueRouter } from "./queue.js";
 import { createRedisRouter } from "./redis.js";
+import { createSecretRouter } from "./secret.js";
 import { createTableRouter } from "./table.js";
 import { createTestRouter } from "./test.js";
 import { createTopicRouter } from "./topic.js";
@@ -41,6 +42,7 @@ export const mergeAllRouters = () => {
     createUiFieldRouter(),
     createHttpClientRouter(),
     createFileBrowserRouter(),
+    createSecretRouter(),
   );
 
   return { router };
